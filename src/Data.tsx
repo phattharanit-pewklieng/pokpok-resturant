@@ -10,16 +10,16 @@ import { MdExplore, MdContactPage } from "react-icons/md";
 
 
 import recipe1 from "./assets/cripy-pork.jpeg";
-// import recipe2 from "./assets/recipe2.jpg";
-// import recipe3 from "./assets/recipe3.jpg";
-// import recipe4 from "./assets/recipe4.jpg";
-// import recipe5 from "./assets/recipe5.jpg";
-// import recipe6 from "./assets/recipe6.jpg";
+import recipe2 from "./assets/cripy-pork.jpeg";
+import recipe3 from "./assets/cripy-pork.jpeg";
+import recipe4 from "./assets/cripy-pork.jpeg";
+import recipe5 from "./assets/cripy-pork.jpeg";
+import recipe6 from "./assets/cripy-pork.jpeg";
 
-// import payment1 from "./assets/payment1.png";
-// import payment2 from "./assets/payment2.png";
-// import payment3 from "./assets/payment3.png";
-// import payment4 from "./assets/payment4.png";
+import payment1 from "../public/visa.png";
+import payment2 from "../public/secure-payment.png"
+import payment3 from "../public/mobile-pay.png";
+import payment4 from "../public/money.png";
 
 export const heroIcons = [
   <CiBurger />,
@@ -37,31 +37,31 @@ export const popularFood = [
   },
   {
     id: 2,
-    image: recipe1,
+    image: recipe2,
     name: "Recipe Name",
     price: "$13",
   },
   {
     id: 3,
-    image: recipe1,
+    image: recipe3,
     name: "Recipe Name",
     price: "$17",
   },
   {
     id: 4,
-    image: recipe1,
+    image: recipe4,
     name: "Recipe Name",
     price: "$22",
   },
   {
     id: 5,
-    image: recipe1,
+    image: recipe5,
     name: "Recipe Name",
     price: "$14",
   },
   {
     id: 6,
-    image: recipe1,
+    image: recipe6,
     name: "Recipe Name",
     price: "$20",
   },
@@ -115,4 +115,4 @@ export const mainMenu = [
 
 export const explores = ["Drinks", "Burger", "Salad", "Breakfast", "Dinner"];
 
-// export const payements = [payment1, payment2, payment3, payment4];
+export const payements = [payment1, payment2, payment3, payment4];

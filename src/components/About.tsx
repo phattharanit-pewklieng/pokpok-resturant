@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FaArrowRight } from 'react-icons/fa'
 import crispy from '../assets/cripy-pork.jpeg'
 import chef from '../assets/chef.avif'

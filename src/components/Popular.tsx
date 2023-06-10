@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { popularFood } from '../Data.tsx'
 
 export const Pouplar = () => {
