@@ -3,7 +3,7 @@ import Home from './components/Home'
 import NavIcon from './components/NavIcon'
 
 import About from './components/About'
-import { Pouplar } from './components/Popular'
+import { Popular } from './components/Popular'
 // import { Recipe } from './components/Recipe'
 import Contact from './components/Contact'
 // import Footer from './components/Footer'
@@ -17,7 +17,7 @@ function App() {
         <NavIcon/>
         <Home/>
         <About/>
-        <Pouplar/>
+        <Popular/>
         <Contact/>
         
       </div>

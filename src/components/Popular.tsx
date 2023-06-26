@@ -1,7 +1,33 @@
-
 import { popularFood } from '../Data.tsx'
+import { useState } from 'react';
 
-export const Pouplar = () => {
+export const Popular = () => {
+  const [cartItems, setCartItems] = useState(popularFood.map(food => ({ ...food, quantity: 0 })));
+
+  const handleDecrease = (foodId: number) => {
+    setCartItems(prevItems => {
+      const updatedItems = prevItems.map(item => {
+        if (item.id === foodId && item.quantity > 0) {
+          return { ...item, quantity: item.quantity - 1 };
+        }
+        return item;
+      });
+      return updatedItems;
+    });
+  };
+
+  const handleIncrease = (foodId: number) => {
+    setCartItems(prevItems => {
+      const updatedItems = prevItems.map(item => {
+        if (item.id === foodId) {
+          return { ...item, quantity: item.quantity + 1 };
+        }
+        return item;
+      });
+      return updatedItems;
+    });
+  };
+
   return (
     <>
       <div className="section" id="recipe">
@@ -10,15 +36,15 @@ export const Pouplar = () => {
             Popular Food!
           </div>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mb-16">
-            {popularFood.map((food) => {
+            {cartItems.map((food) => {
               return (
                 <div className="p-4 shadow-lg hover:shadow transition-all duration-300 cursor-pointer" key={food.id}>
-                  <img src={food.image} alt="" className='rounded-lg mb-4'/>
+                  <img src={food.image} alt="" className='rounded-lg mb-4' />
                   <div className='md:text-xl text-[1rem] font-semibold'>{food.name}</div>
                   <div className="flex items-center gap-2">
-                    <button>-</button>
-                    <span className="text-[0.85rem]">2</span>
-                    <button>+</button>
+                    <button onClick={() => handleDecrease(food.id)}>-</button>
+                    <span className="text-[0.85rem]">{food.quantity}</span>
+                    <button onClick={() => handleIncrease(food.id)}>+</button>
                   </div>
                   <p className="text-[0.85rem] opacity-70 mb-4">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
