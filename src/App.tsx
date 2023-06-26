@@ -5,7 +5,7 @@ import NavIcon from './components/NavIcon'
 import About from './components/About'
 import { Pouplar } from './components/Popular'
 // import { Recipe } from './components/Recipe'
-// import Contact from './components/Contact'
+import Contact from './components/Contact'
 // import Footer from './components/Footer'
 
 function App() {
@@ -18,6 +18,8 @@ function App() {
         <Home/>
         <About/>
         <Pouplar/>
+        <Contact/>
+        
       </div>
     </>
   )
