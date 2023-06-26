@@ -6,7 +6,7 @@ import About from './components/About'
 import { Popular } from './components/Popular'
 // import { Recipe } from './components/Recipe'
 import Contact from './components/Contact'
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -19,6 +19,7 @@ function App() {
         <About/>
         <Popular/>
         <Contact/>
+        <Footer/>
         
       </div>
     </>
