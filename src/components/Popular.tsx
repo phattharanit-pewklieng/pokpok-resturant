@@ -9,7 +9,7 @@ export const Pouplar = () => {
           <div className="text-3xl text-center font-bold mb-16">
             Popular Food!
           </div>
-          <div className="">
+          <div className="grid col-span-3">
             {popularFood.map((food) => {
               return (
                 <div className="p-4 shadow-lg hover:shadow" key={food.id}>
