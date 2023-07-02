@@ -15,10 +15,10 @@ const Footer = () => {
           <div className="flex items-center gap-4">
             <span className="">Follow Us</span>
             <div className="h-[2px] w-12 bg-black"></div>
-            {footerSocials.map((footerSocial, index) => {
+            {footerSocials.map((footerSocial) => {
               return (
-                <div className="" key={index}>
-                  <a href="#">{footerSocial}</a>
+                <div className="" key={footerSocial.id}>
+                  <a href={footerSocial.url}>{footerSocial.icon}</a>
                 </div>
               );
             })}
